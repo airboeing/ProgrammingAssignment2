@@ -3,23 +3,23 @@
 # a matrix rather than compute it repeatedly
 
 ## Usage:
-## > a <- makeCacheMatrix( matrix(c(1,2,12,13), nrow = 2, ncol = 2) );
+## > a <- makeCacheMatrix( matrix(c(1,2,4,5), nrow = 2, ncol = 2) );
 ## > a$get()
 ##       [,1]  [,2]
-## [1,]     1    12
-## [2,]     2    13
+## [1,]     1     4
+## [2,]     2     5
 
 ## > cacheSolve(a)
-##            [,1]        [,2]
-## [1,] -1.1818182  1.09090909
-## [2,]  0.1818182 -0.09090909
+##            [,1]       [,2]
+## [1,] -1.6666667  1.3333333
+## [2,]  0.6666667 -0.3333333
 
 ## Retrieving from the cache in the second run
 ## > cacheSolve(a)
 ## getting cached inverse data.
-##            [,1]        [,2]
-## [1,] -1.1818182  1.09090909
-## [2,]  0.1818182 -0.09090909
+##            [,1]       [,2]
+## [1,] -1.6666667  1.3333333
+## [2,]  0.6666667 -0.3333333
 
 
 # makeCacheMatrix creates a list containing a function to
